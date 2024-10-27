@@ -1,8 +1,8 @@
-# Your Name Here
+# RJ Tardoni
 # UWYO COSC 1010
 # Submission Date
-# Lab XX
-# Lab Section: 
+# Lab 03
+# Lab Section: 14
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -18,6 +18,15 @@
 # You will continue to prompt the user until a proper integer value is entered
 
 factorial = 1
+while factorial:
+    factorial=input("Enter a number")
+    if factorial:
+        print()
+    else:
+        print("Please input a number or digit")
+
+
+
 
 print(f"The result of the factorial based on the given bound is {factorial}")
 

@@ -1,5 +1,5 @@
-# [Name]
-## [Assignment #]
+# [RJ Tardoni]
+## [Assignment #7]
 ## [Submission date: MM/DD/YY]
 ## Worked with/sources 
 * example
