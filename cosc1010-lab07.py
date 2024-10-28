@@ -51,7 +51,7 @@ print("*"*75)
 num_sum = 0 
 
 while (True):
-    num= input ("Enter a numbber")
+    num= input ("Enter a number")
     if num.isdigit():
         print(num)
         num_sum=num_sum + int(num)
@@ -81,4 +81,11 @@ print("*"*75)
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
 
-        
+while(True):
+    operation= input("Give an operation")
+    operands=["+","-","/","*","%"]
+    for operand in operands:
+        if(operand in operation):
+            numbers=operation.split("+")
+
+    
