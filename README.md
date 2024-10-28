@@ -1,6 +1,6 @@
 # [RJ Tardoni]
 ## [Assignment #7]
-## [Submission date: MM/DD/YY]
+## [Submission date: 10/28/24]
 ## Worked with/sources 
 * example
 * example

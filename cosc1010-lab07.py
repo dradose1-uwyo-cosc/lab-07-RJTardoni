@@ -1,6 +1,6 @@
 # RJ Tardoni
 # UWYO COSC 1010
-# Submission Date
+# Submission Date 10/28/24
 # Lab 03
 # Lab Section: 14
 # Sources, people worked with, help given to: 
@@ -17,15 +17,17 @@
     # If a user did not enter a number output a statement saying so
 # You will continue to prompt the user until a proper integer value is entered
 
-factorial = 1
-while factorial:
-    factorial=input("Enter a number")
-    if factorial:
-        print()
+factorial=1
+
+while (True):
+    upperbound=input("Enter a number or upper bound.")
+    if upperbound.isdigit():
+        print(upperbound)
+        for number in range(1,int(upperbound)):
+            factorial =factorial*number
+        break
     else:
         print("Please input a number or digit")
-
-
 
 
 print(f"The result of the factorial based on the given bound is {factorial}")
@@ -48,8 +50,15 @@ print("*"*75)
 
 num_sum = 0 
 
-while num_sum:
-    num_sum= input ("Please enter a list of integers with a comma between")
+while (True):
+    num= input ("Enter a numbber")
+    if num.isdigit():
+        print(num)
+        num_sum=num_sum + int(num)
+    elif input(exit):
+        break
+    else:
+        print("Enter a number.")
 
 print(f"Your final sum is {num_sum}")
 
@@ -70,5 +79,6 @@ print("*"*75)
     # So, it should function the same for `5 + 6` as `5+6`
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
+
 
         
