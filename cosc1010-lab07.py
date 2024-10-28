@@ -48,6 +48,9 @@ print("*"*75)
 
 num_sum = 0 
 
+while num_sum:
+    num_sum= input ("Please enter a list of integers with a comma between")
+
 print(f"Your final sum is {num_sum}")
 
 print("*"*75)
