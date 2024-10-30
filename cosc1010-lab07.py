@@ -86,6 +86,21 @@ while(True):
     operands=["+","-","/","*","%"]
     for operand in operands:
         if(operand in operation):
-            numbers=operation.split("+")
-
-    
+            numbers= operation.split(operand) 
+            numbers=[0]
+            numbers=[2]
+            match operand:
+                case "+":
+                    final_output = numbers[0] + numbers[2]
+                case "-":
+                    final_output = numbers[0] - numbers [2]
+                case "/":
+                    final_output = numbers[0] / numbers [2]
+                case "*":
+                    final_output = numbers[0] * numbers [2]
+                case "%":
+                    final_output = numbers[0] % numbers [2]
+            print(operand)
+            break
+        else:
+            print("error")
