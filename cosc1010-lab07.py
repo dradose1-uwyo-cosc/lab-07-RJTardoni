@@ -4,8 +4,9 @@
 # Lab 03
 # Lab Section: 14
 # Sources, people worked with, help given to: 
-# your
-# comments
+# For the match casing it at first didn't work until the addition of int(), and after the operation worked 
+#-the result still wouldn't print. The addtion of print after each case printed the result but also printed
+#-error for all other cases not present.
 # here
 
 
@@ -90,16 +91,18 @@ while(True):
             final_output=0
             match operand:
                 case "+":
-                    final_output = numbers[0],numbers[1]
+                    final_output = int(numbers[0])+ int(numbers[1])
+                    print(final_output)
                 case "-":
-                    final_output = numbers[0] - numbers [1]
+                    final_output = int(numbers[0]) - int(numbers[1])
+                    print(final_output)
                 case "/":
-                    final_output = numbers[0] / numbers [1]
+                    final_output = int(numbers[0]) / int(numbers[1])
+                    print(final_output)
                 case "*":
-                    final_output = numbers[0] * numbers [1]
+                    final_output = int(numbers[0]) * int(numbers[1])
+                    print(final_output)
                 case "%":
-                    final_output = numbers[0] % numbers [1]
-            print(final_output)
-            break
-        else:
-            print("error")
+                    final_output = int(numbers[0]) % int(numbers[1])
+                    print(final_output)
+    break
